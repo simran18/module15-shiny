@@ -23,6 +23,7 @@ ui <- fluidPage(
   textOutput('cost')
 )
 
+
 # Define a `server` function (with appropriate arguments)
 server <- function(input, output){
   

@@ -25,7 +25,7 @@ Adding **interactivity** to a data report is a highly effective way of communica
 - [Shiny Cheatsheet](https://www.rstudio.com/wp-content/uploads/2016/01/shiny-cheatsheet.pdf)
 - [Shiny Example Gallery](http://shiny.rstudio.com/gallery/)
 - [shinyapps.io User Guide](http://docs.rstudio.com/shinyapps.io/index.html)
-- [Interactive Plots with Shiny](http://shiny.rstudio.com/articles/plot-interaction.html) (see also [here](https://blog.rstudio.org/2015/06/16/shiny-0-12-interactive-plots-with-ggplot2/)
+- [Interactive Plots with Shiny](http://shiny.rstudio.com/articles/plot-interaction.html) (see also [here](https://blog.rstudio.org/2015/06/16/shiny-0-12-interactive-plots-with-ggplot2/))
 - [Interactive Docs with Shiny](https://shiny.rstudio.com/articles/interactive-docs.html)
 
 

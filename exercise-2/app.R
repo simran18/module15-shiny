@@ -39,8 +39,7 @@ ui <- fluidPage(
       
       # A slectInput labeled "Facet By", with choices "cut", "clarity" and "color"
       selectInput('facet.by', label="Facet By", choices=c('cut', 'clarity', 'color'))
-    
-      ),
+    ),
     
     # The `mainPanel()` should have the following reactive outputs:
     mainPanel(
@@ -58,15 +57,13 @@ ui <- fluidPage(
 server <- function(input, output) {
   
   # reactive variable for shared data
-  filtered <- reactive(
-    {
+  filtered <- reactive({
     data <- diamonds.sample %>%
       filter(price > input$price.choice[1] & price < input$price.choice[2]) %>%
       filter(carat > input$carat.choice[1] & carat < input$carat.choice[2])
     
     return(data)
-  }
-)
+  })
   
   # Assign a reactive `renderPlot()` function to the outputted `plot`
   output$plot <- renderPlot({
@@ -93,17 +90,15 @@ server <- function(input, output) {
     }
     
     return(p)
-  }
-  )
+  })
   
   # Bonus: Assign a reactive `renderDataTable()` function to the outputted table
   # You may want to use a `reactive()` variable to avoid needing to filter the data twice!
-  output$table <- renderDataTable(
-    {
+  output$table <- renderDataTable({
     return(filtered())
-  }
-  )
+  })
 }
 
 # Create a new `shinyApp()` using the above ui and server
 shinyApp(ui = ui, server = server)
+
