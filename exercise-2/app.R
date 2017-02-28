@@ -102,3 +102,5 @@ server <- function(input, output) {
 # Create a new `shinyApp()` using the above ui and server
 shinyApp(ui = ui, server = server)
 
+## Double Bonus: For fun, can you make a similar browser for the `mpg` data set?
+## it makes the bonus data table a lot more useful
